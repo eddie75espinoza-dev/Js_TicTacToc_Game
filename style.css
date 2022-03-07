@@ -1,0 +1,111 @@
+:root{
+    /* CSS HEX */
+--grid: #0b3954ff;
+--bg: #bfd7eaff;
+--btn: #ff6663ff;
+--notification: #e0ff4fff;
+--font: #fefffeff;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: var(--bg);
+    user-select: none;
+}
+h2{
+    font-size: 36px;
+    padding: 30px;
+    color: var(--grid);
+}
+.container{
+    text-align: center;
+}
+.game-container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+}
+.game-cell{
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--bg);
+    cursor: pointer;
+    font-size: 65px;
+    background: var(--grid);
+}
+.game-score{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 26px;
+}
+.player1{
+    background-color: limegreen;
+    margin: 10px 20px;
+    width: 100px;
+    border-radius: 4px;
+}
+.player2{
+    background-color: var(--btn);
+    margin: 10px 20px;
+    width: 100px;
+    border-radius: 4px;}
+.game-notification{
+    margin: 20px;    
+    font-size: 20px;
+    text-align: center; 
+    color: var(--grid);   
+    background-color: var(--notification);
+    border-radius: 4px;
+}
+/* Button */
+.game-restart {
+  background-image: linear-gradient(#42A1EC, #0070C9);
+  border: 1px solid #0077CC;
+  border-radius: 4px;
+  /* box-sizing: border-box; */
+  color: #FFFFFF;
+  cursor: pointer;
+  direction: ltr;
+  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  vertical-align: baseline;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+.game-restart:disabled {
+  cursor: default;
+  opacity: .3;
+}
+.game-restart:hover {
+  background-image: linear-gradient(#51A9EE, #147BCD);
+  border-color: #1482D0;
+  text-decoration: none;
+}
+.game-restart:active {
+  background-image: linear-gradient(#3D94D9, #0067B9);
+  border-color: #006DBC;
+  outline: none;
+}
+.game-restart:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
